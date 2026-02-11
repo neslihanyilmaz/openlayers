@@ -1,18 +1,34 @@
-# OpenLayers + Vite
+# OpenLayers Map Project – Schnellstart
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+Dieses Projekt zeigt eine interaktive OpenLayers-Karte mit:
 
-To get started, run the following (requires Node 12+):
+- Verschiedene Kartenquellen: Bing Maps (Satellit), OSM, CartoDB
+- Geolocation (eigene Position anzeigen)
+- Zeichnen von Punkten, Linien, Polygonen und Kreisen
+- Features speichern, laden, löschen oder als GeoJSON herunterladen
+- Übersichtskarte, Vollbild-, Maßstabs- und Zoom-Steuerung
 
-    npx create-ol-app my-app --template vite
+---
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:3000):
+## Schnell starten
 
-    cd my-app
-    npm start
+1. Repository klonen:
 
-To generate a build ready for production:
+```bash
+git clone https://github.com/neslihanyilmaz/openlayers.git
+cd openlayers
 
-    npm run build
+2. Abhängigkeiten installieren
+npm install
 
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+3. Entwicklungsserver starten:
+npm start
+
+Tipps bei Problemen
+Node.js >= 20 und npm installiert?
+Bei Fehlern node_modules und package-lock.json löschen und neu installieren:
+rm -rf node_modules package-lock.json
+npm install
+npm start
+.DS_Store stören manchmal (Mac):
+find . -name ".DS_Store" -delete
