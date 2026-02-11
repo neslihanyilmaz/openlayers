@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>OpenLayers</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="info" style="display: none;"></div>
+    <div  id="layerbtn-group">
+    <button id="stamen" class="layerButton"><span class="material-icons">&#xe53b;</span></button>
+    <button id="cartoDB" class="layerButton"><span class="material-icons">&#xe53b;</span></button>
+    <button id="esriSatellite" class="layerButton"><span class="material-icons">&#xe53b;</span></button>
+    <button id="osm" class="layerButton"><span class="material-icons">&#xe53b;</span></button>
+  </div>
+    <div id="geoButtonContainer">
+      <button id="geoButton" title="Standort anzeigen"><span class="material-icons">&#xe55c;</span></button> 
+      
+    </div>
+
+    <div id="drawbtn-group">
+      <button id="Point" value= "Point" class='drawButton'><span class="material-icons">&#xebf3;</span></button>
+      <button id="Circle" value="Circle" class='drawButton'><span class="material-icons"> &#xef4a;</span></button>
+      <button id="Polygon" value="Polygon" class='drawButton'><span class="material-icons">&#xeb50;</span></button>
+      <button id="LineString" value="LineString" class='drawButton'><span class="material-icons">&#xe6e1;</span></button>
+    </div>
+
+    <div id="editButtons">
+      <a id="download" download="features.json"><button><span class="material-icons">
+        &#xe2c4;</span></button></a>
+      <button id="clear"><span class="material-icons">&#xe872;</span></button>
+    </div>
+
+    
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
